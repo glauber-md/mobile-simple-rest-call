@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Allow everything from same origin -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: waze: gap:; script-src * 'unsafe-inline' 'unsafe-eval'; style-src * 'unsafe-inline'; img-src 'self' data: https:; font-src *; connect-src 'self' ws: https: http:; child-src gap:; frame-src gap:; object-src 'none'">
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+
+        <!-- App core libraries -->
+        <!-- build:js js/core.js -->
+        <script type="text/javascript" src="js/utils/common_utils.js"></script>
+        <script type="text/javascript" src="js/utils/format_utils.js"></script>
+        <script type="text/javascript" src="js/utils/system_utils.js"></script>
+        <script type="text/javascript" src="js/core/dbmgr.js"></script>
+        <script type="text/javascript" src="js/core/cache.js"></script>
+        <script type="text/javascript" src="js/core/params.js"></script>
+        <script type="text/javascript" src="js/core/wscall.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript">
+            dbmgr.init();
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
