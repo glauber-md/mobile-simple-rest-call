@@ -5,10 +5,11 @@ It currently depends on jquery (I'll plan a future version without that dependen
 
 It also depends on the following cordova libraries:
 
-cordova-sqlite-storage-dependencies
+```cordova-sqlite-storage-dependencies```
 
 To start a new project, execute (as per documentation at https://cordova.apache.org/#getstarted):
 
+```
 npm install -g cordova
 
 cordova create MyApp
@@ -16,3 +17,4 @@ cordova create MyApp
 cd MyApp
 
 cordova platform add <platform name e.g. ios, android>
+```
