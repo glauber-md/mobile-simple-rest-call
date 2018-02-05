@@ -17,7 +17,7 @@ cordova platform add <platform name e.g. ios, android>
 
 ## Dependencies
 
-This library currently depends on jQuery (I'll plan a future version without that dependency). You can get it from https://jquery.com/download/ .
+This library currently depends on jQuery. You can get it from https://jquery.com/download/ .
 
 It also depends on the following cordova libraries:
 
