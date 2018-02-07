@@ -73,3 +73,21 @@ wscall.get(
     }
 );
 ```
+
+Similarly, to call a REST `POST` endpoint you'll invoke:
+```javascript
+wscall.post(
+    'http://myserver.org/users/1234',
+    {
+        "some_data": {
+            "foo": "bar"
+        }
+    },
+    function(responseData) {
+        // Do something when the response is successful
+    },
+    function(error) {
+        // Do something when an error happens
+    }
+);
+```
