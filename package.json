@@ -1,0 +1,28 @@
+{
+  "name": "mobile-simple-web-call",
+  "version": "0.0.2",
+  "description": "A simpler way to call HTTP REST endpoints from a mobile Cordova application.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glauber-md/mobile-simple-web-call.git"
+  },
+  "keywords": [
+    "mobile",
+    "rest",
+    "library"
+  ],
+  "author": "Glauber M. Dantas",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/glauber-md/mobile-simple-web-call/issues"
+  },
+  "homepage": "https://github.com/glauber-md/mobile-simple-web-call#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.3.0"
+  }
+}
