@@ -80,7 +80,9 @@ wscall.post(
     'http://myserver.org/users/1234',
     {
         "some_data": {
-            "foo": "bar"
+            "foo": "bar",
+            "baz": 0.0,
+            "nil": null
         }
     },
     function(responseData) {
