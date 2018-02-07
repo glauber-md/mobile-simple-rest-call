@@ -33,7 +33,7 @@ cordova plugin add cordova-sqlite-storage --save
 
 You'll need to import the required libraries on your `index.html` file:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
