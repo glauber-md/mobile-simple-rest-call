@@ -3,11 +3,11 @@ A simple API to speed up mobile Cordova development. The goal is to provide a st
 
 ## First steps
 
+Install Cordova (https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli).
+
 To start a new project, execute (as per documentation at https://cordova.apache.org/#getstarted):
 
 ```
-npm install -g cordova
-
 cordova create MyApp
 
 cd MyApp
@@ -26,7 +26,27 @@ It also depends on the following cordova libraries:
 If you're using `npm` then you can just:
 
 ```
-npm install jquery
-
 cordova plugin add cordova-sqlite-storage --save
+```
+
+## Using this library
+
+You'll need to import the required libraries on your `index.html` file:
+
+```
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+        <!-- mobile-simple-web-call library -->
+        <script type="text/javascript" src="js/mswc.js"></script>
+        <script type="text/javascript">
+            dbmgr.init();
+        </script>
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+    </body>
+</html>
 ```
