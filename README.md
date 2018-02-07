@@ -64,6 +64,7 @@ To call a REST `GET` endpoint, you'll need just to call `wscall.get(...)` and th
 ```javascript
 wscall.get(
     'http://myserver.org/users/1234',
+    // (Optional) query strings
     null,
     function(responseData) {
         // Do something when the response is successful
@@ -74,10 +75,11 @@ wscall.get(
 );
 ```
 
-Similarly, to call a REST `POST` endpoint you'll invoke:
+Similarly, to call a REST `POST` endpoint you'd invoke:
 ```javascript
 wscall.post(
     'http://myserver.org/users/1234',
+    // Data to be sent
     {
         "some_data": {
             "foo": "bar",
