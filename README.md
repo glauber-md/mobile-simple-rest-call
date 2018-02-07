@@ -20,6 +20,11 @@ cd MyApp
 cordova platform add <platform name e.g. ios, android>
 ```
 
+Install Grunt (https://gruntjs.com/getting-started#installing-the-cli). It will make easier to install the dependencies.
+```
+npm install -g grunt-cli
+```
+
 ## Dependencies
 
 This library currently depends on jQuery. You can get it from https://jquery.com/download/ .
@@ -28,11 +33,12 @@ It also depends on the following cordova libraries:
 
 ```cordova-sqlite-storage```
 
-Then you can install it by invoking:
+Then you can install it by simply invoking:
 
 ```
 cordova plugin add cordova-sqlite-storage --save
 ```
+TODO use grunt command here
 
 ## Using this library
 
