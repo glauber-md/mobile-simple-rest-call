@@ -42,6 +42,7 @@ You'll need to import the required libraries on your `index.html` file:
         <!-- mobile-simple-web-call library -->
         <script type="text/javascript" src="js/mswc.js"></script>
         <script type="text/javascript">
+            // Initializing the database for local caching and parameters
             dbmgr.init();
         </script>
     </head>
