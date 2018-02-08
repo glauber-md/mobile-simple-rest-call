@@ -2,11 +2,13 @@
 A simple API to speed up mobile Cordova development. The goal is to provide a stable and simple API to call HTTP REST endpoints and implement local caching according to HTTP server's response (as implemented by web browsers).
 The library will take care of caching the server's response when required, avoiding unnecessary trafic and data plan costs apart from speeding up the App.
 
+It uses the best supported database for Cordova, which runs on Android, iOS and Windows platforms (see [Cordova Storage](http://cordova.apache.org/docs/en/7.x/cordova/storage/storage.html#sqlite-plugin) documentation for further details).
+
 ![Sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
 
 ## Licence
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is licenced by GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive licence.
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is licenced under GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive licence.
 
 ## First steps
 
@@ -24,17 +26,13 @@ cordova platform add <platform name e.g. ios, android>
 ```
 
 ### Get this library
-Download [build/cordova-simplerestcall.min.js](cordova-simplerestcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
+Download [cordova-simplerestcall.min.js](build/cordova-simplerestcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
 
 ### Get the dependencies
 
 This library currently depends on jQuery. You can get it from https://jquery.com/download/ . After downloading, copy jQuery's library file to ```www/js``` inside your project root.
 
-It also depends on the following Cordova library:
-
-```cordova-sqlite-storage```
-
-You can install it by simply invoking:
+It also depends on the [cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage#readme) library; you can install it by simply invoking:
 
 ```
 cordova plugin add cordova-sqlite-storage --save
@@ -42,16 +40,15 @@ cordova plugin add cordova-sqlite-storage --save
 
 ## Using this library
 
-You'll need to import the required libraries on your `index.html` file:
+You'll need to import the required libraries on your `index.html` file and initialize the database:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <!-- mobile-simple-web-call library -->
-        <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script> <!-- here... -->
+        <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script> <!-- ...and here -->
         <script type="text/javascript">
             // Initializing the database for local caching and parameters
             dbmgr.init();
