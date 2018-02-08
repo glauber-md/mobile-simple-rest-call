@@ -2,6 +2,8 @@
 A simple API to speed up mobile Cordova development. The goal is to provide a stable and simple API to call HTTP REST endpoints and implement local caching according to HTTP server's response (as implemented by web browsers).
 The library will take care of caching the server's response when required, avoiding unnecessary trafic and data plan costs apart from speeding up the App.
 
+![Sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
+
 ## Licence
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is licenced by GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive licence.
