@@ -10,7 +10,7 @@ The library will take care of caching the server's response when required, avoid
 
 Install Cordova (https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli). It depends on NodeJS and NPM.
 
-To start a new project, execute (as per documentation at https://cordova.apache.org/#getstarted):
+To start a new Cordova project, execute (as per documentation at https://cordova.apache.org/#getstarted):
 
 ```
 cordova create MyApp
@@ -25,20 +25,21 @@ Install Grunt (https://gruntjs.com/getting-started#installing-the-cli). It will 
 npm install -g grunt-cli
 ```
 
+Download this library from the ```build``` directory and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
+
 ## Dependencies
 
-This library currently depends on jQuery. You can get it from https://jquery.com/download/ .
+This library currently depends on jQuery. You can get it from https://jquery.com/download/ . After downloading, copy jQuery's library file to ```www/js``` inside your project root.
 
-It also depends on the following cordova libraries:
+It also depends on the following Cordova library:
 
 ```cordova-sqlite-storage```
 
-Then you can install it by simply invoking:
+You can install it by simply invoking:
 
 ```
 cordova plugin add cordova-sqlite-storage --save
 ```
-TODO use grunt command here
 
 ## Using this library
 
@@ -49,9 +50,9 @@ You'll need to import the required libraries on your `index.html` file:
 <html lang="en">
     <head>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
         <!-- mobile-simple-web-call library -->
-        <script type="text/javascript" src="lib/mobile-simple-web-call/core.js"></script>
+        <script type="text/javascript" src="js/cordova-simplewebcall.min.js"></script>
         <script type="text/javascript">
             // Initializing the database for local caching and parameters
             dbmgr.init();
@@ -105,3 +106,11 @@ wscall.post(
     }
 );
 ```
+
+## Contribute
+
+Contributions are welcome! If you find a bug, or want to suggest an improvement please send me an email at ```opensource (at) glauber.me```. You can also fill a bug report on Github and I'll work on it on my free time.
+
+## Donation 
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FNS4EKFJHJNA4&lc=BR&item_name=Opensource%20Glauber%20ME&item_number=cordova%2dsimplewebcall%20library&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) Pay me a coffee or a beer XD I'll be more than happy with your contribution as humble as it is.
