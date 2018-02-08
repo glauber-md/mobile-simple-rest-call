@@ -23,6 +23,7 @@
   "homepage": "https://github.com/glauber-md/mobile-simple-web-call#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
-    "grunt-contrib-uglify": "^3.3.0"
+    "grunt-contrib-uglify": "^3.3.0",
+    "cordova-sqlite-storage": "~2.2.0"
   }
 }
