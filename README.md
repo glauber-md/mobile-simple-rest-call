@@ -113,4 +113,4 @@ Contributions are welcome! If you find a bug, or want to suggest an improvement 
 
 ## Donation 
 
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FNS4EKFJHJNA4&lc=BR&item_name=Opensource%20Glauber%20ME&item_number=cordova%2dsimplewebcall%20library&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) Pay me a coffee or a beer XD I'll be more than happy with your contribution as humble as it is.
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=FNS4EKFJHJNA4&lc=BR&item_name=Opensource%20Glauber%20ME&item_number=cordova%2dsimplewebcall%20library&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted) You can pay me a coffee (:coffee:) or a beer (:beers:) :) I'll be more than happy with your contribution as humble as it is.
