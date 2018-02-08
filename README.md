@@ -8,6 +8,7 @@ The library will take care of caching the server's response when required, avoid
 
 ## First steps
 
+### Start a new Cordova project
 Install Cordova (https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli). It depends on NodeJS and NPM.
 
 To start a new Cordova project, execute (as per documentation at https://cordova.apache.org/#getstarted):
@@ -20,14 +21,10 @@ cd MyApp
 cordova platform add <platform name e.g. ios, android>
 ```
 
-Install Grunt (https://gruntjs.com/getting-started#installing-the-cli). It will make easier to install the dependencies.
-```
-npm install -g grunt-cli
-```
-
+### Get this library
 Download this library from the ```build``` directory and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
 
-## Dependencies
+### Get the dependencies
 
 This library currently depends on jQuery. You can get it from https://jquery.com/download/ . After downloading, copy jQuery's library file to ```www/js``` inside your project root.
 
@@ -107,7 +104,7 @@ wscall.post(
 );
 ```
 
-## Contribute
+## Contributions
 
 Contributions are welcome! If you find a bug, or want to suggest an improvement please send me an email at ```opensource (at) glauber.me```. You can also fill a bug report on Github and I'll work on it on my free time.
 
