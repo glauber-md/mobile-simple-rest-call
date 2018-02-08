@@ -1,4 +1,4 @@
-// Mobile Simple Web Call - A simpler way to call HTTP REST endpoints on Apache
+// Mobile Simple REST Call - A simpler way to call HTTP REST endpoints on Apache
 // Cordova mobile applications.
 // Copyright (C) 2018  Glauber M. Dantas (opensource@glauber.me)
 
@@ -28,7 +28,7 @@ var common_utils = (function () {
 
     var isNull = function (obj) {
         var _r = false;
-        if (typeof obj === 'undefined' || obj === null || obj === undefined) {
+        if (typeof obj === 'undefined' || obj === null) {
             _r = true;
         }
         return _r;

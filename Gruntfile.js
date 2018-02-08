@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       build: {
         src: 'src/js/**/*.js',
-        dest: 'build/cordova-simplerestcall.min.js'
+        dest: 'dist/cordova-simplerestcall.min.js'
       }
     }
   });

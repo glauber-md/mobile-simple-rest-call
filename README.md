@@ -25,18 +25,13 @@ cd MyApp
 cordova platform add <platform name e.g. ios, android>
 ```
 
-### Get this library
-Download [cordova-simplerestcall.min.js](build/cordova-simplerestcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
-
-### Get the dependencies
-
-This library currently depends on jQuery. You can get it from https://jquery.com/download/ . After downloading, copy jQuery's library file to ```www/js``` inside your project root.
-
-It also depends on the [cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage#readme) library; you can install it by simply invoking:
+### Get this library and its dependencies
 
 ```
-cordova plugin add cordova-sqlite-storage --save
+npm install mobile-simple-rest-call --save
 ```
+
+Then copy ```node_modules/mobile-simple-rest-call/dist/cordova-simplerestcall.min.js``` and ```node_modules/jquery/dist/jquery.min.js```  to your newly created project under ```www/js``` directory.
 
 ## Using this library
 
