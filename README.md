@@ -1,4 +1,4 @@
-# mobile-simple-web-call
+# mobile-simple-rest-call
 A simple API to speed up mobile Cordova development. The goal is to provide a stable and simple API to call HTTP REST endpoints and implement local caching according to HTTP server's response (as implemented by web browsers).
 The library will take care of caching the server's response when required, avoiding unnecessary trafic and data plan costs apart from speeding up the App.
 
@@ -22,7 +22,7 @@ cordova platform add <platform name e.g. ios, android>
 ```
 
 ### Get this library
-Download [build/cordova-simplewebcall.min.js](cordova-simplewebcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
+Download [build/cordova-simplerestcall.min.js](cordova-simplerestcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
 
 ### Get the dependencies
 
@@ -49,7 +49,7 @@ You'll need to import the required libraries on your `index.html` file:
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <!-- mobile-simple-web-call library -->
-        <script type="text/javascript" src="js/cordova-simplewebcall.min.js"></script>
+        <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script>
         <script type="text/javascript">
             // Initializing the database for local caching and parameters
             dbmgr.init();
