@@ -22,7 +22,7 @@ cordova platform add <platform name e.g. ios, android>
 ```
 
 ### Get this library
-Download this library from the ```build``` directory and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
+Download [build/cordova-simplewebcall.min.js](cordova-simplewebcall.min.js) and put it on your newly created project (e.g. move it to folder ```www/js``` inside your project root).
 
 ### Get the dependencies
 
