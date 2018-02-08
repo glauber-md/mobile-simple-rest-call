@@ -30,11 +30,7 @@ Download [cordova-simplerestcall.min.js](build/cordova-simplerestcall.min.js) an
 
 This library currently depends on jQuery. You can get it from https://jquery.com/download/ . After downloading, copy jQuery's library file to ```www/js``` inside your project root.
 
-It also depends on the [cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage#readme) library:
-
-```cordova-sqlite-storage```
-
-You can install it by simply invoking:
+It also depends on the [cordova-sqlite-storage](https://github.com/litehelpers/Cordova-sqlite-storage#readme) library; you can install it by simply invoking:
 
 ```
 cordova plugin add cordova-sqlite-storage --save
@@ -42,16 +38,15 @@ cordova plugin add cordova-sqlite-storage --save
 
 ## Using this library
 
-You'll need to import the required libraries on your `index.html` file:
+You'll need to import the required libraries on your `index.html` file and initialize the database:
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/jquery.min.js"></script>
-        <!-- mobile-simple-web-call library -->
-        <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script> <!-- here... -->
+        <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script> <!-- ...and here -->
         <script type="text/javascript">
             // Initializing the database for local caching and parameters
             dbmgr.init();
