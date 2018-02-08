@@ -2,6 +2,8 @@
 A simple API to speed up mobile Cordova development. The goal is to provide a stable and simple API to call HTTP REST endpoints and implement local caching according to HTTP server's response (as implemented by web browsers).
 The library will take care of caching the server's response when required, avoiding unnecessary trafic and data plan costs apart from speeding up the App.
 
+It uses the best supported database for Cordova, which runs on Android, iOS and Windows platforms (see [Cordova Storage](http://cordova.apache.org/docs/en/7.x/cordova/storage/storage.html#sqlite-plugin) documentation for further details).
+
 ![Sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
 
 ## Licence
