@@ -10,6 +10,25 @@ It uses the best supported database for Cordova, which runs on Android, iOS and 
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is licenced under GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive licence.
 
+## Features
+
+The advantage of this library is having the same behavior accross the supoprted platforms and the use of SQLite database. I was motivated to develop this lib due to the inconsistent behavior when communicating with one of our customer's backend as the cache was triggered sometimes in one platform and not in another and the quirks when saving simple key/value data on local database.
+
+### Simple REST operations
+The library supports common HTTP operations for the purpose of mobile development. The most common errors (e.g. timeout, server error) are already handled; you just need to implement the callbacks where applicable.
+
+HTTP operations:
+
+- GET
+- POST
+- PUT
+- DELETE
+
+### Local key/value and cache database
+Implemented using SQLite database, supported on iOS, Android and Windows platforms. 
+
+For ```GET``` operations, the library will take care of caching the server response when needed, avoiding unnecessary network traffic and calls to backend processing routines and extra data usage. 
+
 ## First steps
 
 ### Start a new Cordova project
@@ -55,13 +74,7 @@ You'll need to import the required libraries on your `index.html` file and initi
 </html>
 ```
 
-The library supports the following HTTP operations (the most common for the purpose of mobile development):
-- GET
-- POST
-- PUT
-- DELETE
-
-To call a REST `GET` endpoint, you'll need just to call `wscall.get(...)` and the library will take care of caching the server response when needed, avoiding unnecessary network traffic and extra data usage. The most common errors (e.g. timeout, server error) are already handled; you just need to implement the callbacks where applicable.
+To call a REST `GET` endpoint, you'll need just to call `wscall.get(...)`:
 
 ```javascript
 wscall.get(
@@ -80,7 +93,7 @@ wscall.get(
 Similarly, to call a REST `POST` endpoint you'd invoke:
 ```javascript
 wscall.post(
-    'http://myserver.org/users/1234',
+    'http://myserver.org/users',
     // Data to be sent
     {
         "some_data": {
@@ -89,6 +102,42 @@ wscall.post(
             "nil": null
         }
     },
+    function(responseData) {
+        // Do something when the response is successful
+    },
+    function(error) {
+        // Do something when an error happens
+    }
+);
+```
+
+The same applies to ```PUT``` and ```DELETE```operations: 
+
+```javascript
+wscall.put(
+    'http://myserver.org/users/1234',
+    // Data to be updated
+    {
+        "some_data": {
+            "foo": "bar",
+            "baz": 0.0,
+            "nil": null
+        }
+    },
+    function(responseData) {
+        // Do something when the response is successful
+    },
+    function(error) {
+        // Do something when an error happens
+    }
+);
+```
+
+```javascript
+wscall.delete(
+    'http://myserver.org/users/1234',
+    // (Optional) query strings
+    null,
     function(responseData) {
         // Do something when the response is successful
     },
