@@ -1,6 +1,6 @@
 {
   "name": "mobile-simple-rest-call",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simpler way to call HTTP REST endpoints from a mobile Cordova application.",
   "main": "Gruntfile.js",
   "scripts": {
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "cordova-sqlite-storage": "^2.2.0",
+    "cordova-plugin-network-information": "^2.0.1",
     "jquery": "^3.3.1"
   }
 }
