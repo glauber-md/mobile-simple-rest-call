@@ -12,7 +12,7 @@ It uses the best supported database for Cordova, which runs on Android, iOS and 
 
 ## Features
 
-The advantage of this library is having the same behavior accross the supoprted platforms and the use of SQLite database. I was motivated to develop this lib due to the inconsistent behavior when communicating with one of our customer's backend as the cache was triggered sometimes in one platform and not in another and the quirks when saving simple key/value data on local database.
+The advantage of this library is having the same behavior across the supoprted platforms and the use of SQLite database. I was motivated to develop this lib due to the inconsistent behavior when communicating with one of our customer's backend as the cache was triggered sometimes in one platform and not in another and the quirks when saving simple key/value data on local database.
 
 ### Simple REST operations
 The library supports common HTTP operations for the purpose of mobile development. The most common errors (e.g. timeout, server error) are already handled; you just need to implement the callbacks where applicable.
