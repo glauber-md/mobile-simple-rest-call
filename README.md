@@ -4,11 +4,15 @@ The library will take care of caching the server's response when required, avoid
 
 It uses the best supported database for Cordova, which runs on Android, iOS and Windows platforms (see [Cordova Storage](http://cordova.apache.org/docs/en/7.x/cordova/storage/storage.html#sqlite-plugin) documentation for further details).
 
-![Sonarcloud](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
+![Sonarcloud-QualityGate](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
+![Sonarcloud-Security](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=security_rating)
+![Sonarcloud-Quality](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=sqale_rating)
+![Sonarcloud-Reliability](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=reliability_rating)
+![Sonarcloud-Vulnerability](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=vulnerabilities)
 
-## Licence
+## License
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is licenced under GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive licence.
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) This work is Licensed under GPL v3. You can copy, modify and distribute this software even for commercial purposes; however you must include the reference to the original author and if you modify this software, you must re-distribute it using the same permissive License.
 
 ## Features
 
@@ -34,7 +38,7 @@ For ```GET``` operations, the library will take care of caching the server respo
 ### Start a new Cordova project
 Install Cordova (https://cordova.apache.org/docs/en/latest/guide/cli/#installing-the-cordova-cli). It depends on NodeJS and NPM.
 
-To start a new Cordova project, execute (as per documentation at https://cordova.apache.org/#getstarted):
+To start a new Cordova project, execute (see https://cordova.apache.org/#getstarted):
 
 ```
 cordova create MyApp
