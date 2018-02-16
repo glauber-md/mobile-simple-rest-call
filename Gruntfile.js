@@ -15,10 +15,14 @@ module.exports = function(grunt) {
           if_return: true,
           join_vars: true,
           drop_console: true
-        }
+        },
+        mangle: true
       },
       build: {
-        src: 'src/js/**/*.js',
+        src: [
+          'src/js/utils/*.js',
+          'src/js/core/*.js'
+        ],
         dest: 'dist/cordova-simplerestcall.min.js'
       }
     }

@@ -23,9 +23,6 @@
 // Following the 'module' pattern
 var common_utils = (function () {
 
-    // Private variables and functions
-    var _config = app_config;
-
     var isNull = function (obj) {
         var _r = false;
         if (typeof obj === 'undefined' || obj === null) {
@@ -51,10 +48,6 @@ var common_utils = (function () {
     };
     
     var log = function (text) {
-        if(!_config.log.enable) {
-            return;
-        }
-        
         if(isNull(text)) {
             return;
         }

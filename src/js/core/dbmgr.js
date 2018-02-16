@@ -34,12 +34,6 @@ var dbmgr = (function (config) {
     } else {
         _config = config;
     }
-    var _cmds = {
-        SEL: 'SELECT',
-        INS: 'INSERT',
-        UPD: 'UPDATE',
-        DEL: 'DELETE'
-    };
     
     var _getDbConnection = function (success, failure) {
         if (window.sqlitePlugin) {
