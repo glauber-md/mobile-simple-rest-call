@@ -64,6 +64,10 @@ You'll need to import the required libraries on your `index.html` file and initi
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval';">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script> <!-- here... -->
         <script type="text/javascript" src="js/cordova-simplerestcall.min.js"></script> <!-- ...and here -->
