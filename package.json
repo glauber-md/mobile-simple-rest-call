@@ -1,6 +1,6 @@
 {
   "name": "mobile-simple-rest-call",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simpler way to call HTTP REST endpoints from a mobile Cordova application.",
   "main": "Gruntfile.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/glauber-md/mobile-simple-rest-call#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.2",
     "grunt-contrib-uglify": "^3.3.0"
   },
   "dependencies": {
