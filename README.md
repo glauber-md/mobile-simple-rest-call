@@ -82,6 +82,8 @@ You'll need to import the required libraries on your `index.html` file and initi
 </html>
 ```
 
+> IMPORTANT NOTE: as this library is still being developed, the build is broken right now; I plan to fix the minified file in a couple of days.
+
 To call a REST `GET` endpoint, you'll need just to call `wscall.get(...)`:
 
 ```javascript
