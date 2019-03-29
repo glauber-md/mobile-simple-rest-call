@@ -56,9 +56,9 @@ var wscall = (function (config) {
     };
     
     // process the given header and add them to XHR object
-    var _processHeaders = function(xhr, headers){
-        if( !common_utils.isNull(headers) ){
-            headers.forEach(function(el,index,array){
+    var _processHeaders = function (xhr, headers) {
+        if (!common_utils.isNull(headers)) {
+            headers.forEach(function(el, index, array){
                 xhr.setRequestHeader(el.item,el.value);
             });
         }
@@ -148,7 +148,7 @@ var wscall = (function (config) {
                 url: url,
                 data: data,
                 beforeSend: function (xhr) {
-                    xhr = _processHeaders(xhr,headers);
+                    xhr = _processHeaders(xhr, headers);
                     return true;
                 },
                 complete: function(xhr, status) {
@@ -173,7 +173,7 @@ var wscall = (function (config) {
             url: url,
             data: data,
             beforeSend: function (xhr) {
-                xhr = _processHeaders(xhr,headers);
+                xhr = _processHeaders(xhr, headers);
                 return true;
             },
             complete: function(xhr, status) {
@@ -191,7 +191,7 @@ var wscall = (function (config) {
             url: url,
             data: data,
             beforeSend: function (xhr) {
-                xhr = _processHeaders(xhr,headers);
+                xhr = _processHeaders(xhr, headers);
                 return true;
             },
             complete: function(xhr, status) {
@@ -212,7 +212,7 @@ var wscall = (function (config) {
             type: 'DELETE',
             url: _url,
             beforeSend: function (xhr) {
-                xhr = _processHeaders(xhr,headers);
+                xhr = _processHeaders(xhr, headers);
                 return true;
             },
             complete: function(xhr, status) {
