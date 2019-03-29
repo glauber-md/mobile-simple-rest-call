@@ -54,8 +54,18 @@ var wscall = (function (config) {
             }
         }
     };
+    
+    // process the given header and add them to XHR object
+    var _processHeaders = function(xhr, headers){
+        if( !common_utils.isNull(headers) ){
+            headers.forEach(function(el,index,array){
+                xhr.setRequestHeader(el.item,el.value);
+            });
+        }
+        return xhr;
+    };
 
-    var _get = function (url, data, success, failure) {
+    var _get = function (url, data, success, failure, headers) {
         var strData = JSON.stringify(data);
         common_utils.log('[WS] GET -> URL: ' + url + '; Data: ' + strData);
         var resource = url + strData;
@@ -138,6 +148,7 @@ var wscall = (function (config) {
                 url: url,
                 data: data,
                 beforeSend: function (xhr) {
+                    xhr = _processHeaders(xhr,headers);
                     return true;
                 },
                 complete: function(xhr, status) {
@@ -148,14 +159,21 @@ var wscall = (function (config) {
         }
     };
 
-    var _post = function (url, data, success, failure) {
-        var strData = JSON.stringify(data);
+    var _post = function (url, data, success, failure, headers) {
+        var strData = ""
+        if( typeof data != "string"){
+            strData = JSON.stringify(data);
+        }
+        else{
+            strData = data;
+        }
         common_utils.log('[WS] POST -> URL: ' + url + '; Data: ' + strData);
         $.ajax($.extend(ajax_options, {
             type: 'POST',
             url: url,
             data: data,
             beforeSend: function (xhr) {
+                xhr = _processHeaders(xhr,headers);
                 return true;
             },
             complete: function(xhr, status) {
@@ -165,7 +183,7 @@ var wscall = (function (config) {
         }));
     };
     
-    var _put = function (url, data, success, failure) {
+    var _put = function (url, data, success, failure, headers) {
         var strData = JSON.stringify(data);
         common_utils.log('[WS] PUT -> URL: ' + url + '; Data: ' + strData);
         $.ajax($.extend(ajax_options, {
@@ -173,6 +191,7 @@ var wscall = (function (config) {
             url: url,
             data: data,
             beforeSend: function (xhr) {
+                xhr = _processHeaders(xhr,headers);
                 return true;
             },
             complete: function(xhr, status) {
@@ -182,7 +201,7 @@ var wscall = (function (config) {
         }));
     };
 
-    var _delete = function (url, data, success, failure) {
+    var _delete = function (url, data, success, failure, headers) {
         var strData = JSON.stringify(data);
         common_utils.log('[WS] DELETE -> URL: ' + url + '; Data: ' + strData);
         var _url = url;
@@ -193,6 +212,7 @@ var wscall = (function (config) {
             type: 'DELETE',
             url: _url,
             beforeSend: function (xhr) {
+                xhr = _processHeaders(xhr,headers);
                 return true;
             },
             complete: function(xhr, status) {
