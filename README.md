@@ -4,11 +4,10 @@ The library will take care of caching the server's response when required, avoid
 
 It uses the best supported database for Cordova, which runs on Android, iOS and Windows platforms (see [Cordova Storage](http://cordova.apache.org/docs/en/7.x/cordova/storage/storage.html#sqlite-plugin) documentation for further details).
 
-![Sonarcloud-QualityGate](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)
-![Sonarcloud-Security](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=security_rating)
-![Sonarcloud-Quality](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=sqale_rating)
-![Sonarcloud-Reliability](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=reliability_rating)
-![Sonarcloud-Vulnerability](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=vulnerabilities)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=alert_status)](https://sonarcloud.io/dashboard?id=cordova-simplerestcall)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=security_rating)](https://sonarcloud.io/dashboard?id=cordova-simplerestcall)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=cordova-simplerestcall)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=cordova-simplerestcall&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=cordova-simplerestcall)
 
 ## License
 
